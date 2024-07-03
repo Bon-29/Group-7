@@ -1,13 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;  /* Align content to the left */
     align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #ffffff;
     color: #333;
-    padding-left: 20px;  /* Add padding for a margin from the left edge */
+    padding-top: 20px;  /* Add padding for a margin from the top edge */
+}
+
+.logo img {
+    width: 184px;  /* Double the original size for better visibility */
+    height: 60px;
+    margin-bottom: 20px;
 }
 
 .links {
@@ -22,7 +29,15 @@ body {
     color: #1a0dab;
 }
 
-
+.advanced-search-container {
+    background-color: #ffffff;
+    border: 1px solid #dfe1e5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
 
 .advanced-search-container h1 {
     color: #d93025;
