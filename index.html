@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic body and link styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .links {
+            margin-bottom: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #1a0dab; /* Google's blue */
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center; /* Align content to the center */
+        }
+
+        .search-bar {
+            width: calc(100% - 170px); /* Adjust width for logo and buttons */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #dfe1e5; /* Google's input border color */
+            border-radius: 6px;
+            outline: none;
+            margin-right: 10px; /* Space between input and buttons */
+        }
+
+        .google-logo {
+            height: 34px; /* Adjust logo height */
+            vertical-align: middle; /* Align with input */
+            margin-right: 10px; /* Space between logo and input */
+        }
+
+        .buttons {
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        .search-button, .lucky-button {
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: #f8f9fa; /* Google's button background color */
+            color: #3c4043; /* Google's button text color */
+        }
+
+        .search-button:hover, .lucky-button:hover {
+            background-color: #f0f0f0; /* Hover background color */
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="images.html">Image Search</a>
+        <a href="advanced.html">Advanced Search</a>
+    </div>
+    <div class="search-container">
+        <form action="https://www.google.com/search">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo" class="google-logo">
+            <input type="text" name="q" class="search-bar" placeholder="Search...">
+            <div class="buttons">
+                <input type="submit" value="Google Search" class="search-button">
+                <input type="submit" value="I'm Feeling Lucky" class="lucky-button" name="btnI">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
